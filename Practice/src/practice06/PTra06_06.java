@@ -19,6 +19,21 @@ public class PTra06_06 {
 		 * ■■■□□
 		 * ■■■■□
 		 */
+		String square = "□";
+		System.out.println("-----------------------------------");
+
+		for (int i = 0; i < 5; i++) {
+			square = "■";
+			System.out.println();
+			for (int n = 0; n < 5; n++) {
+				if (n <= i - 1) {
+				System.out.print(square);
+				}else {
+					square = "□";
+					System.out.print(square);
+				}
+			}
+		}
 
 	}
 }

@@ -1,4 +1,5 @@
 package practice06;
+
 /*
  * PTra06_04.java
  *   作成	LIKEIT	2017
@@ -15,6 +16,11 @@ public class PTra06_04 {
 		 * -----------------------------------
 		 * ■■■■■
 		 */
+		System.out.println("-----------------------------------");
+
+		for (int i = 0; i < 5; i++) {
+			System.out.print("■");
+		}
 
 	}
 }

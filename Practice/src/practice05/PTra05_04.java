@@ -10,6 +10,7 @@ public class PTra05_04 {
 	public static void main(String[] args) {
 		// 入力型プログラムです。
 		// 下記の命令は、入力型プログラムで必要な記述になります。
+
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 
 		/*
@@ -23,9 +24,9 @@ public class PTra05_04 {
 		 */
 
 		// ①
-		boolean loop;
+		boolean loop = true;
 
-		while (loop = true)
+		while (loop) {
 		System.out.println("0～6の整数を入力してください");
 
 		String line = scanner.nextLine();
@@ -61,6 +62,7 @@ public class PTra05_04 {
 				break;
 			default:
 				loop = true;
+			}
 		}
 	}
 }
