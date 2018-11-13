@@ -7,6 +7,7 @@ package practice11;
  */
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class PTra11_02 {
 	public static void main(String[] args) {
@@ -15,10 +16,17 @@ public class PTra11_02 {
 		Book[] books = FileReaderClass.readBookDataFile();
 
 		System.out.println("探したい本のタイトル（又はその一部）を入力してください");
+		Scanner scanner = new Scanner(System.in);
 		String line = scanner.nextLine();
 
-		if(Arrays.asList(books).contains("o")) {
-			System.out.println("oo");
+		for(Book book : books) {
+			if(book.title.contains(line)) {
+				System.out.println(book.dispBookInfo());
+			}
+		}
+
+		if(Arrays.asList(books).contains(line)) {
+			System.out.println(line);
 		}
 		/*繰り返しで、文字の一部を一致するものを特定するメソッドを使う（探す）*/
 		// ★ ユーザが入力した文字列が、本情報のタイトル一部に含まれていた場合は、その本情報を出力してください

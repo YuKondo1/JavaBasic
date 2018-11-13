@@ -35,7 +35,10 @@ public class PTra17_03 {
 		 * から再度入力を求めるような形に仕様変更してください。
 		 *
 		 */
+		boolean isN = true;
+		while(isN) {
 		try {
+
 			for (int i = 0; i < question.length; i++) {
 				System.out.println("問題：" + (i + 1));
 				System.out.println(question[i]);
@@ -52,9 +55,10 @@ public class PTra17_03 {
 		} catch(IOException e) {
 			System.out.println("例外が発生しました");
 		} catch(NumberFormatException e) {
-			System.out.println("数字以外が入力されました");
+			continue;
 		}
-
+		break;
+		}
 		System.out.println("全ての問題が終わりました。");
 		System.out.println("あなたの得点は・・・" + score + "点です！");
 
