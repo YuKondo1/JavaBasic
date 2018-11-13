@@ -24,6 +24,6 @@ public class PTra16_03 {
 	public static void main(String[] args) {
 
 		// ★ PTra16_03クラスのtoStringメソッドの内容を出力してくだい
-		toString();
+		System.out.println(new PTra16_03().toString());
 	}
 }
